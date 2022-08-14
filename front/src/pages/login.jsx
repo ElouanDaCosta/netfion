@@ -1,10 +1,9 @@
 import React from "react";
+import LoginBlock from "../components/loginBlock";
 
 function Login() {
   return (
-    <div>
-      <h1>Login</h1>
-    </div>
+    <LoginBlock />
   )
 };
 
