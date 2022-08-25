@@ -16,7 +16,7 @@
     background: $color-tertiary;
     img {
       width: 100%;
-      height: auto;
+      height: 250px;
       align-self: center;
     }
   }
@@ -75,4 +75,11 @@
       @include loginRegisterButton;
     }
   }
+}
+
+#forgot-link {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

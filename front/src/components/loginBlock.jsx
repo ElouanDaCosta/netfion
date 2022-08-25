@@ -20,7 +20,7 @@ function LoginBlock () {
           <div className="login-register-block__form_container__form__input">
             <span>{locker}</span>
             <input type="password" placeholder="Password" />
-            <Link to="/forgot-password">Forgot ?</Link>
+            <Link id="forgot-link" to="/forgot-password">Forgot?</Link>
           </div>
         <button className="login-register-block__form_container__button">Login</button>
         </form>
