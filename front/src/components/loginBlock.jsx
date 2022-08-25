@@ -22,8 +22,8 @@ function LoginBlock () {
             <input type="password" placeholder="Password" />
             <Link to="/forgot-password">Forgot ?</Link>
           </div>
-        </form>
         <button className="login-register-block__form_container__button">Login</button>
+        </form>
         <p>Don't have an account? <Link to="/register">Register</Link></p>
       </div>
     </div>
