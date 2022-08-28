@@ -6,17 +6,6 @@ const user = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" view
 const email = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
 
 function RegisterBlock ({ handlesubmit }) {
-
-  document.querySelectorAll(".text-input").forEach((elemnt) => {
-    elemnt.addEventListener("blur", (e) => {
-      if (e.target.value !== "") {
-        e.target.parentNode.classList.add("focus");
-      } else {
-        e.target.parentNode.classList.remove("focus");
-      }
-    });
-  });
-
   return (
     <div className="login-register-block">
       <div className="login-register-block__top_container">
@@ -29,23 +18,51 @@ function RegisterBlock ({ handlesubmit }) {
         className="login-register-block__form_container__form">
           <div className="login-register-block__form_container__form__input">
             <span>{user}</span>
-            <input className="text-input" id="username" type="text" required />
-            <label className="login-register-block__form_container__form__input__label" htmlFor="username">Username</label>
+            <input 
+            className="text-input" 
+            id="username" 
+            type="text" 
+            required 
+            />
+            <label 
+            className="login-register-block__form_container__form__input__label" 
+            htmlFor="username">Username</label>
           </div>
           <div className="login-register-block__form_container__form__input">
             <span>{email}</span>
-            <input className="text-input" id="email" type="email" required />
-            <label className="login-register-block__form_container__form__input__label" htmlFor="email">Email</label>
+            <input 
+            className="text-input" 
+            id="email" 
+            type="email" 
+            required 
+            />
+            <label 
+            className="login-register-block__form_container__form__input__label" 
+            htmlFor="email">Email</label>
           </div>
           <div className="login-register-block__form_container__form__input">
             <span>{locker}</span>
-            <input className="text-input" id="password" type="password" required />
-            <label className="login-register-block__form_container__form__input__label" htmlFor="password">Password</label>
+            <input 
+            className="text-input" 
+            id="password" 
+            type="password" 
+            required 
+            />
+            <label 
+            className="login-register-block__form_container__form__input__label" 
+            htmlFor="password">Password</label>
           </div>
           <div className="login-register-block__form_container__form__input">
             <span>{locker}</span>
-            <input className="text-input" id="password-confirmation" type="password" required />
-            <label className="login-register-block__form_container__form__input__label" htmlFor="password-confirmation">Confirm Password</label>
+            <input 
+            className="text-input" 
+            id="password-confirmation" 
+            type="password" 
+            required 
+            />
+            <label 
+            className="login-register-block__form_container__form__input__label" 
+            htmlFor="password-confirmation">Confirm Password</label>
           </div>
         <button 
         type="submit"
