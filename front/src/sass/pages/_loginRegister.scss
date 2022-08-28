@@ -69,16 +69,15 @@
             }
           }
 
-          &:focus + label, .focus {
+          &:focus + label{
             top: +34px;
             color: $color-primary;
             font-size: 14px;
             background-color: white;
           }
-
         }
 
-        &__label {
+        label {
           position: absolute;
           left: 10px;
           top: 14px;
@@ -97,9 +96,7 @@
             width: 100%;
             z-index: -1;
           }
-
         }
-
       }  
     }
     &__button {

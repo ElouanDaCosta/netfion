@@ -22,7 +22,7 @@ function LoginBlock () {
             required
             />
             <label 
-            className="login-register-block__form_container__form__input__label" 
+            className="focus" 
             htmlFor="username">Username</label>
           </div>
           <div className="login-register-block__form_container__form__input">
@@ -34,7 +34,7 @@ function LoginBlock () {
             required
             />
             <label 
-            className="login-register-block__form_container__form__input__label" 
+            className="focus" 
             htmlFor="password">Password</label>
             <Link id="forgot-link" to="/forgot-password">Forgot?</Link>
           </div>

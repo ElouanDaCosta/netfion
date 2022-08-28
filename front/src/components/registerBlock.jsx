@@ -25,7 +25,7 @@ function RegisterBlock ({ handlesubmit }) {
             required 
             />
             <label 
-            className="login-register-block__form_container__form__input__label" 
+            className="focus" 
             htmlFor="username">Username</label>
           </div>
           <div className="login-register-block__form_container__form__input">
@@ -37,7 +37,7 @@ function RegisterBlock ({ handlesubmit }) {
             required 
             />
             <label 
-            className="login-register-block__form_container__form__input__label" 
+            className="focus" 
             htmlFor="email">Email</label>
           </div>
           <div className="login-register-block__form_container__form__input">
@@ -49,7 +49,7 @@ function RegisterBlock ({ handlesubmit }) {
             required 
             />
             <label 
-            className="login-register-block__form_container__form__input__label" 
+            className="focus" 
             htmlFor="password">Password</label>
           </div>
           <div className="login-register-block__form_container__form__input">
@@ -61,7 +61,7 @@ function RegisterBlock ({ handlesubmit }) {
             required 
             />
             <label 
-            className="login-register-block__form_container__form__input__label" 
+            className="focus" 
             htmlFor="password-confirmation">Confirm Password</label>
           </div>
         <button 
