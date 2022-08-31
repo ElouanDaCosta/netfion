@@ -97,6 +97,14 @@
             z-index: -1;
           }
         }
+
+        .focus {
+          top: +34px;
+          color: $color-quaternary;
+          font-size: 14px;
+          background-color: white;
+        }
+
       }  
     }
     &__button {

@@ -7,8 +7,18 @@ function Register() {
     window.location.href = "/login";
   }
 
+  const labelAnimation = (e) => {
+    if (e.target.value !== "") {
+      e.target.nextElementSibling.classList.add("focus");
+    } else {
+      e.target.nextElementSibling.classList.remove("focus");
+    }
+  }
+
   return (
-    <RegisterBlock handlesubmit={handleSubmit}/>
+    <RegisterBlock 
+      handlesubmit={handleSubmit}
+      labelAnimation={labelAnimation} />
   )
 };
 
