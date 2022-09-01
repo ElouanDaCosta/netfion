@@ -25,6 +25,7 @@ function LoginBlock ({ labelAnimation }) {
             <label 
             htmlFor="username">Username</label>
           </div>
+          <span id="username-error" className="login-register-block__form_container__form__error">{/*Error message when email is wrong*/}</span>
           <div className="login-register-block__form_container__form__input">
             <span>{locker}</span>
             <input 
@@ -36,8 +37,9 @@ function LoginBlock ({ labelAnimation }) {
             />
             <label 
             htmlFor="password">Password</label>
-            <Link id="forgot-link" to="/forgot-password">Forgot?</Link>
+            <Link id="forgot-link" to="/forgot-password">Forgor?</Link>
           </div>
+          <span id="password-error" className="login-register-block__form_container__form__error">{/*Error message when email is wrong*/}</span>
         <button className="login-register-block__form_container__button">Login</button>
         </form>
         <p>Don't have an account? <Link to="/register">Register</Link></p>

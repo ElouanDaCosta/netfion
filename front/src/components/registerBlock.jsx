@@ -28,6 +28,7 @@ function RegisterBlock ({ handlesubmit, labelAnimation }) {
             <label
             htmlFor="username">Username</label>
           </div>
+          <span id="username-error" className="login-register-block__form_container__form__error">{/*Error message when email is wrong*/}</span>
           <div className="login-register-block__form_container__form__input">
             <span>{email}</span>
             <input 
@@ -40,6 +41,7 @@ function RegisterBlock ({ handlesubmit, labelAnimation }) {
             <label 
             htmlFor="email">Email</label>
           </div>
+          <span id="email-error" className="login-register-block__form_container__form__error">{/*Error message when email is wrong*/}</span>
           <div className="login-register-block__form_container__form__input">
             <span>{locker}</span>
             <input 
@@ -52,6 +54,7 @@ function RegisterBlock ({ handlesubmit, labelAnimation }) {
             <label 
             htmlFor="password">Password</label>
           </div>
+          <span id="password-error" className="login-register-block__form_container__form__error">{/*Error message when email is wrong*/}</span>
           <div className="login-register-block__form_container__form__input">
             <span>{locker}</span>
             <input 
@@ -64,6 +67,7 @@ function RegisterBlock ({ handlesubmit, labelAnimation }) {
             <label 
             htmlFor="password-confirmation">Confirm Password</label>
           </div>
+          <span id="password-confirmation-error" className="login-register-block__form_container__form__error">{/*Error message when email is wrong*/}</span>
         <button 
         type="submit"
         className="login-register-block__form_container__button">Register</button>
